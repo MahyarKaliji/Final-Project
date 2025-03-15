@@ -1,8 +1,10 @@
 import "./style.css";
-import { btnsOpenClose } from "./js/openClose";
 import movieList from "./js/movieList";
 import watchedMovieList from "./js/watchedMovieList";
-import fetchMultipleMovies, { error, isLoading } from "./js/fetchMultipleMovies";
+import fetchMultipleMovies, {
+  error,
+  isLoading,
+} from "./js/fetchMultipleMovies";
 import appendElements from "./js/appendElements";
 import loader from "./js/loader";
 
@@ -10,6 +12,8 @@ export const moviesList = document.getElementById("movies-box");
 export const watchedList = document.getElementById("watched-box");
 const inputSearch = document.getElementById("search-movie");
 const result = document.getElementById("result");
+
+const btnsOpenClose = document.querySelectorAll(".btn-open-close");
 
 export let movies = [];
 export let selectedId = null;

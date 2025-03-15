@@ -12,7 +12,6 @@ import starRating from "./starRating";
 import loader from "./loader";
 import { watchedList } from "../main";
 import watchedMovieList from "./watchedMovieList";
-import keyEvent from "./keyEvent";
 
 let userRating = 0;
 
@@ -26,7 +25,6 @@ async function movieDetails(id) {
   watchedList.innerHTML = "";
   appendElements(watchedList, [loader()]);
 
-  keyEvent("Escape", handleCloseMovie);
 
   try {
     const isRated = watched.find((mov) => mov.imdbID === selectedId);
