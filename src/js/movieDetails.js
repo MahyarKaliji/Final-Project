@@ -8,7 +8,7 @@ import {
 } from "../main";
 import appendElements from "./appendElements";
 import fetchSingleMovie from "./fetchSingleMovie";
-import starRating2 from "./starRating2";
+import starRating from "./starRating";
 import loader from "./loader";
 import { watchedList } from "../main";
 import watchedMovieList from "./watchedMovieList";
@@ -77,7 +77,6 @@ async function movieDetails(id) {
     backButton.onclick = () => {
       watchedMovieList(watched);
       setSelectedId(null);
-      // starRating2();
     };
     backButton.innerHTML = "&larr;";
 
@@ -123,7 +122,7 @@ async function movieDetails(id) {
       addToListBtn.innerHTML = "+ Add to list";
       addToListBtn.onclick = handleAddToList;
 
-      appendElements(rateDiv, [starRating2({ maxRating: 10 })]);
+      appendElements(rateDiv, [starRating({ maxRating: 10 })]);
     }
 
     const moviePlot = document.createElement("p");
