@@ -1,5 +1,7 @@
 # 🍿 Popcorn - Movie Search Application
 
+<p align="left"><img width="700px" src="./public/assets/preview/preview.png" alt="preview image" /></p>
+
 A vanilla JavaScript application for searching and managing your watched movies. Built with pure JavaScript, HTML, and CSS, featuring a modern UI with Tailwind CSS.
 
 ## 🌟 Features
@@ -27,6 +29,7 @@ A vanilla JavaScript application for searching and managing your watched movies.
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js (latest stable version)
 - npm or yarn
 - A modern web browser
@@ -34,45 +37,54 @@ A vanilla JavaScript application for searching and managing your watched movies.
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone [your-repo-url]
 ```
 
 2. Navigate to the project directory:
+
 ```bash
 cd popcorn
 ```
 
 3. Install dependencies:
+
 ```bash
 npm install
 ```
 
 4. Start the development server:
+
 ```bash
 npm run dev
 ```
 
 5. For Tailwind CSS compilation:
+
 ```bash
 npm run tailwind
 ```
 
 ## 🎮 How to Use
 
-1. **Search Movies**: 
+1. **Search Movies**:
+
    - Type at least 3 characters in the search box
    - Results will update automatically
 
-2. **View Movie Details**: 
+2. **View Movie Details**:
+
    - Click on any movie from the search results
    - View comprehensive movie information
 
-3. **Rate & Add Movies**: 
+3. **Rate & Add Movies**:
+
    - Click on the stars to rate (1-10)
    - Click "Add to list" to add to watched movies
 
-4. **Manage Watched Movies**: 
+4. **Manage Watched Movies**:
+
    - View your watched movies list
    - Remove movies using the "X" button
    - See statistics in the summary section
@@ -110,11 +122,13 @@ npm run dev
 ```
 
 To compile Tailwind CSS:
+
 ```bash
 npm run tailwind
 ```
 
 To build for production:
+
 ```bash
 npm run build
 ```
@@ -133,7 +147,3 @@ MIT License
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 🖥 Preview
-
-<p align="center"><img width="700px" src="./public/assets/preview/preview.png" alt="preview image" /></p>
