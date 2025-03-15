@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project | PopCorn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-background-900 text-text p-9 font-main">
+    <nav
+      class="px-9 py-3 rounded-lg bg-primary grid grid-cols-3 items-center mb-6"
+    >
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <span class="text-xl">🍿</span>
+        <h1 class="text-4xl font-bold">Popcorn</h1>
+      </div>
+
+      <!-- Search -->
+      <input
+        id="search-movie"
+        type="text"
+        placeholder="Search movies..."
+        class="bg-primary-light rounded-lg py-3 px-4 transition-all duration-300 focus:outline-none focus:-translate-y-0.5 focus:shadow-[0_2.4rem_2.4rem_0_rgba(0,0,0,0.1)]"
+      />
+
+      <!-- Result -->
+      <p class="justify-self-end text-xl">
+        Found
+        <span id="result" class="w-6 inline-flex justify-center">0</span> top
+        results
+      </p>
+    </nav>
+    <main class="flex justify-center h-[calc(100vh-10.5rem)] gap-5">
+      <section
+        class="bg-background-500 w-[29rem] max-w-[29rem] relative h-full rounded-lg overflow-scroll scrollbar-hide"
+      >
+        <div id="movies-box" class="text-3xl"></div>
+        <button
+          class="btn-open-close bg-background-900 absolute top-2 right-2 aspect-[1] rounded-full flex items-center justify-center text-lg font-bold border-none z-[999] cursor-pointer h-[30px]"
+          data-box="movies"
+        >
+          -
+        </button>
+      </section>
+      <section
+        class="bg-background-500 w-[29rem] max-w-[29rem] relative h-full rounded-lg overflow-scroll scrollbar-hide"
+      >
+        <div id="watched-box">
+          <!-- <div
+            id="summary"
+            class="bg-background-100 px-9 pt-6 pb-5 rounded-lg shadow-[0_0.852rem_1.7rem_rgba(0,0,0,0.2)]"
+          >
+            <h2 class="uppercase text-lg mb-2">movies you watched</h2>
+            <div
+              id="summary-details"
+              class="flex items-center gap-7 text-lg font-semibold"
+            ></div>
+          </div> -->
+          <!-- <div id="watched-list"></div> -->
+        </div>
+        <button
+          class="btn-open-close bg-background-900 absolute top-2 right-2 aspect-[1] rounded-full flex items-center justify-center text-lg font-bold border-none z-[999] cursor-pointer h-[30px]"
+          data-box="watched"
+        >
+          -
+        </button>
+      </section>
+    </main>
+    <div class="hidden"></div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
